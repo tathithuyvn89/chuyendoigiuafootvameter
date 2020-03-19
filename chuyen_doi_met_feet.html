@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyen doi giua met va feet</title>
+</head>
+<body>
+<form>
+    <h1> Chuyển đổi giữa meter và foot</h1>
+    <p> Enter a number</p>
+    <input type="text" id="data">
+    <p id="change">
+    <button type="button" onclick="chuyensangfoot()" style="width:150px ">From Meter to Foot</button>
+    <button type="button" onclick="transferFromFootToMeter()" style="width:150px "> From Foot to Meter</button> <br/><br/>
+    </p>
+    <div id="result">Kết quả :</div>
+</form>
+<script>
+    function chuyensangfoot() {
+        a = document.getElementById("data").value;
+        console.log(a);
+        m = Number(a) * 0.305;
+        document.getElementById("result").innerHTML =a+ " meters = " + m + " foots.";
+    }
+    function transferFromFootToMeter() {
+        a = document.getElementById("data").value;
+        console.log(a);
+        n = Number(a) * 3.279;
+        document.getElementById("result").innerHTML =a+ " foots= " + n + " feets.";
+    }
+
+</script>
+</body>
+</html>
